@@ -1,6 +1,6 @@
 # 1 - Hello World
 
-In this step we will create a new react project using create-react-app and then clean out the things we don't need.
+In this step we will create a new React project using *create-react-app* and then remove the "out of the box" stuff to put us at a clean slate.
 
 ## Creating a project
 
@@ -49,5 +49,18 @@ The src-folder is where we put the code that makes up our application. This is t
 
 Start by removing ***everything except index.js*** from the src-folder and then all ***content from index.js*** to get a clean slate.
 
-*index.js* is the entry point of our code so this is where we will create our React App and placing it in *index.html*.
+*index.js* is the entry point for our code so this is where we will create our React App and insert it into a div in *index.html* by telling *ReactDOM* to render to that specific div. Enter the code below into *index.js*.
 
+```javascript
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+ReactDOM.render(
+  <React.StrictMode>
+    <h1>Hello World!</h1>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+```
+
+It might not be much to look at, but we now have an empty project for React development!

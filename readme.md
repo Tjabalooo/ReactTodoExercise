@@ -17,4 +17,9 @@ Each step of the exercise includes at least one new feature of React development
 
 ## [1 - Hello World](1%20-%20Hello%20World)
 
+* Creating a new project
+
 ## [2 - Hello Component](2%20-%20Hello%20Component)
+
+* Creating a component
+ 

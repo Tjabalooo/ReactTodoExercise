@@ -23,3 +23,11 @@ Each step of the exercise includes at least one new feature of React development
 
 * Creating a component
  
+## [3 - Hello Props](3%20-%20Hello%20Props)
+
+* Intoducing props
+ 
+## [4 - A Todo](2%20-%20A%20Todo)
+
+* Intoducing styling
+ 

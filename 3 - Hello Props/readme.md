@@ -1,4 +1,4 @@
-# 1 - Hello Props
+# 3 - Hello Props
 
 Now it's time to introduce a major player in the component model, *props*! By sending values and callbacks down the component tree we can start adding behaviour to our React app.
 

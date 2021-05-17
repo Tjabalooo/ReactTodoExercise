@@ -1,4 +1,4 @@
-# 1 - Hello Component
+# 2 - Hello Component
 
 We will now hoist our "Hello World!" from *index.js* into a Hello-component, then placing it in an App-component that in turn will be used to give our React app a good entry point.
 

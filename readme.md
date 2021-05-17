@@ -27,7 +27,7 @@ Each step of the exercise includes at least one new feature of React development
 
 * Intoducing props
  
-## [4 - A Todo](2%20-%20A%20Todo)
+## [4 - A Todo](4%20-%20A%20Todo)
 
 * Intoducing styling
  

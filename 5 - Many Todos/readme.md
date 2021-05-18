@@ -28,7 +28,7 @@ With our new TodoList-component ready, replace the rendring of Todo in the App-c
 
 If we look in *todos.json* we can see that there's a *userId* property that we don't use in our Todo-component, but when investigating our component through *React Developer Tools* we can see that it's there anyway.
 
-![Todo.props](images/Todo.userId.png)
+![Todo.props](../images/Todo.userId.png)
 
 Feeding components with properties they don't use is bad practice and should be avoided. Thankfully we can take advantage of the rest-operator when working through the map-function to peel away the userId from our todo-object.
 

@@ -39,6 +39,22 @@ export const App = () => {
 }
 ```
 
+## Adding a small part of global styling
+
+We have a small portion of global styles that we want to apply to our app, and those should be placed in a css-file. Create a file named *index.css*, import it into index.js and add the following to it:
+
+```css
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+      sans-serif;
+}
+```
+
 ## Introducing styled-components
 
 CSS can style [pseudo elements](https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes) which makes it possible to change the apperance of an element depending on a range of scenarios. [*Styled-components*](https://styled-components.com/docs/basics#getting-started) is a commonly used library that allows us to write scoped CSS in a React component by generating a unique class name and using that in the scope of the component. The first thing we're going to use *styled-components* for is to make our button light up when hovered.
@@ -65,7 +81,6 @@ const Button = styled('button')`
     }`;
 
 export const Todo = ({id, title, completed=false}) => {
-
     return (
         <div>
             <div>
@@ -74,9 +89,8 @@ export const Todo = ({id, title, completed=false}) => {
             </div>
             <Button>X</Button>
         </div>
-    )
-
-}
+    );
+};
 ```
 
 An other place where we want to use *styled-component* is for our label. We want parts of the styling to depend on if the Todo is completed or not, and we will do this by passing the boolean to the styled component.
@@ -103,10 +117,43 @@ Use the styled component instead of the label and don't forget to set the attrib
 <Label htmlFor={id} completed={completed}>{title}</Label>
 ```
 
-We have two things left to style; the checkbox and the container. Both of these could be styled with *styled-components* as well, but we will be doing it using *inline styling*.
+## Trying out inline styling
+
+We have two things left to style; the checkbox and the container. Both of these could be styled with *styled-components* as well, but we will be doing it using *inline styling* this time for the sake of the exercise.
 
 Add the styles for the div and the input:
 
 ```javascript
+const containerStyle = {
+    padding: '8px 16px',
+    backgroundColor: 'white',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    margin: '5px 0'
+};
 
+const checkboxStyle = {
+    appearance: 'none'
+};
 ```
+
+And then use them to style the elements of interest:
+
+```javascript
+export const Todo = ({id, title, completed=false}) => {
+    return (
+        <div style={containerStyle}>
+            <div>
+                <input style={checkboxStyle} id={id} type="checkbox" checked={completed} />
+                <Label htmlFor={id} completed={completed}>{title}</Label>
+            </div>
+            <Button>X</Button>
+        </div>
+    );
+};
+```
+
+## Validation
+
+Before moving on, don't forget to validate that the label change as expected if you change the value of *completed* that is sent down to the Todo-component.

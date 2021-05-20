@@ -34,3 +34,7 @@ Each step of the exercise includes at least one new feature of React development
 ## [5 - Many Todos](5%20-%20Many%20Todos)
 
 * Intoducing lists
+
+## [6 - Interactive Todos](6%20-%20Interactive%20Todos)
+
+* Intoducing state

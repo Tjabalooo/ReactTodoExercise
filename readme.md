@@ -38,3 +38,7 @@ Each step of the exercise includes at least one new feature of React development
 ## [6 - Interactive Todos](6%20-%20Interactive%20Todos)
 
 * Intoducing state
+
+## [7 - Creating Todos](7%20-%20Creating%20Todos)
+
+* Creating a controlled component

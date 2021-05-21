@@ -42,3 +42,7 @@ Each step of the exercise includes at least one new feature of React development
 ## [7 - Creating Todos](7%20-%20Creating%20Todos)
 
 * Creating a controlled component
+
+## [8 - Storing Todos](8%20-%20Storing%20Todos)
+
+* Working with effects and asynchronous calls

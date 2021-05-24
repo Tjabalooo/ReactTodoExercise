@@ -46,3 +46,7 @@ Each step of the exercise includes at least one new feature of React development
 ## [8 - Stored Todos](8%20-%20Stored%20Todos)
 
 * Working with effects and asynchronous calls
+
+## [9 - A Welcoming Page](9%20-%20A%20Welcoming%20Page)
+
+* Working with React Router

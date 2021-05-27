@@ -50,3 +50,11 @@ Each step of the exercise includes at least one new feature of React development
 ## [9 - A Welcoming Page](9%20-%20A%20Welcoming%20Page)
 
 * Working with React Router
+
+## [10 - Adding Users](10%20-%20Adding%20Users)
+
+* Working with a shared context
+
+## [11 - Error Boundary](11%20-%20Error%20Boundary)
+
+* Using Error Boundaries to catch markup-exceptions

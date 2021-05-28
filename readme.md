@@ -58,3 +58,7 @@ Each step of the exercise includes at least one new feature of React development
 ## [11 - Error Boundary](11%20-%20Error%20Boundary)
 
 * Using Error Boundaries to catch markup-exceptions
+
+## [12 - Writing A Test](12%20-%20Writing%20A%20Test)
+
+* Writing tests using React Testing Library
